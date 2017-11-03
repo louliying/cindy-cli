@@ -1,0 +1,20 @@
+{
+  "name": "needYou",
+  "version": "1.0.0",
+  "description": "my first npm project",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louliying/needYou.git"
+  },
+  "keywords": [
+    "fisrt",
+    "npm"
+  ],
+  "author": "louliying",
+  "license": "MIT"
+}
