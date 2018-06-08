@@ -1,20 +1,37 @@
 {
-  "name": "needYouLLY",
-  "version": "1.0.0",
-  "description": "my first npm project",
-  "main": "index.js",
-  "bin": "index.js",
+  "name": "cx-build-cli",
+  "version": "1.0.8",
+  "description": "my cx cli",
+  "preferGlobal": true,
+  "bin": {
+    "cx-init": "bin/cx-init"
+  },
+  "keywords": [
+    "cli"
+  ],
+   "author": "cindy",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/louliying/needYou.git"
+  "dependencies": {
+    "async": "^2.6.1",
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "consolidate": "^0.15.1",
+    "handlebars": "^4.0.11",
+    "inquirer": "^5.2.0",
+    "metalsmith": "^2.3.0",
+    "minimatch": "^3.0.4",
+    "multimatch": "^2.1.0",
+    "ora": "^2.1.0",
+    "rimraf": "^2.6.2",
+    "user-home": "^2.0.0"
   },
-  "keywords": [
-    "fisrt",
-    "npm"
-  ],
-  "author": "louliying",
-  "license": "MIT"
+  "engines": {
+    "node": ">=6.0.0"
+  }
 }
