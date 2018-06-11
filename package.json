@@ -1,6 +1,6 @@
 {
-  "name": "cx-build-cli",
-  "version": "1.0.8",
+  "name": "cx-cli",
+  "version": "1.0.0",
   "description": "my cx cli",
   "preferGlobal": true,
   "bin": {
