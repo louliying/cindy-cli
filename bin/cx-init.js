@@ -17,9 +17,26 @@ const generate = require('../lib/generate');
 program
     .usage('<template-name> [project-name]')
     // 转义cmd里的参数
-    .parse(process.argv)
-    .option('-c, --clone', 'use git clone')
-    .option('--offline', 'use cached template');
+    .parse(process.argv);
+
+/**
+ * help
+ */
+
+program.on("--help", () => {
+    console.log("Example:")
+    console.log()
+    console.log(chalk.gray("    # create a new project with base template"));
+    console.log("    $ tpo init my-project")
+    console.log()
+})
+
+function help() {
+    if (program.args.length < 1) {
+        return program.help()
+    }
+}
+
 
 // 从cmd里，取到用户输入的第一个参数
 // 用户想要安装的模板名

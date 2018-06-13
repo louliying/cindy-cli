@@ -1,6 +1,6 @@
 {
-  "name": "cx-cli",
-  "version": "1.0.0",
+  "name": "cx-init",
+  "version": "1.0.1",
   "description": "my cx cli",
   "preferGlobal": true,
   "bin": {
@@ -13,6 +13,10 @@
   "license": "ISC",
   "directories": {
     "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louliying/cx-cli"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
