@@ -41,7 +41,7 @@ function help() {
 // 从cmd里，取到用户输入的第一个参数
 // 用户想要安装的模板名
 let template = program.args[0];
-console.log('template 000000:', template);
+// console.log('template 000000:', template);
 
 // 从cmd里，取到用户输入 的第二个参数
 // 用户想要创建的项目名
@@ -70,8 +70,8 @@ if (inPlace || exists(to)) {
         name: 'Ok'
     }]).then(answer => {
         // 回答是的
-        console.log('answer 222222222:', answer);
-        console.log('answer 33333333:', answer.Ok);
+        // console.log('answer 222222222:', answer);
+        // console.log('answer 33333333:', answer.Ok);
         if (answer.Ok) {
             run();
         }
@@ -101,18 +101,18 @@ function downloadAndGenerate(temp) {
     }
 
     download(temp, tempUrl, {clone: false}, err =>{
-        console.log('temp 22222222:', temp);
-        console.log('tempUrl 333333333:', tempUrl);
-        console.log('err 44444444:', err);
+        // console.log('temp 22222222:', temp);
+        // console.log('tempUrl 333333333:', tempUrl);
+        // console.log('err 44444444:', err);
          spinner.stop()
         if (err) {
-            // console.log('很抱歉，出错了：', err);
-            console.log(chalk.red('很抱歉，出错了2:' + err.toString()))
+            console.log('很抱歉，出错了：', err);
+            // console.log(chalk.red('很抱歉，出错了2:' + err.toString()))
         }
         generate(name, tempUrl, to, err => {
             if (err) {
                 console.log('很抱歉，出错了：', err);
-                console.log(chalk.red('很抱歉，出错了3:' + err.toString()))
+                // console.log(chalk.red('很抱歉，出错了3:' + err.toString()))
             }
         })
     })
