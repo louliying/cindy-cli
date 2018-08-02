@@ -24,10 +24,11 @@ program
  */
 
 program.on("--help", () => {
+    console.log(chalk.green('目前只支持: cx-template 和 vue-template'));
     console.log("Example:")
     console.log()
-    console.log(chalk.gray("    # create a new project with base template"));
-    console.log("    $ tpo init my-project")
+    console.log(chalk.green("# cx-init cx-template myProjectName"));
+    console.log(chalk.green("# cx-init vue-template myProjectName"));
     console.log()
 })
 
@@ -41,6 +42,11 @@ function help() {
 // 从cmd里，取到用户输入的第一个参数
 // 用户想要安装的模板名
 let template = program.args[0];
+if(!template) {
+    help();
+} else if (template !== 'cx-template' || template !== 'vue-template'){
+    help();
+}
 // console.log('template 000000:', template);
 
 // 从cmd里，取到用户输入 的第二个参数
