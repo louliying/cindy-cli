@@ -53,7 +53,7 @@ if(!template ) {
     help();
     console.log('template 77:', template);
 }*/
-.. console.log('template 88:', template);
+// console.log('template 88:', template);
 // console.log('template 000000:', template);
 
 // 从cmd里，取到用户输入 的第二个参数
