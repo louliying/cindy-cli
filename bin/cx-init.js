@@ -100,7 +100,10 @@ if (inPlace || exists(to)) {
 
 function run() {
     // git上有的模板有  template
-    const templateUrl = 'louliying/' + template;
+    // const templateUrl = 'louliying/' + template;
+    const templateUrl = 'gitlab:http://git01.dds.com:louliying/' + template;
+    // const templateUrl = 'gitlab:git@git01.dds.com:louliying/' + template + '.git';
+    console.log('user new templateUrl 222:', templateUrl);
     // 下载模板 并 生成项目
     downloadAndGenerate(templateUrl);
 }
