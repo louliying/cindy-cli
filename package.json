@@ -21,6 +21,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+      "registry": "http://nexus.chexiang.com/repository/npm-chexiang/"
+    },
   "dependencies": {
     "async": "^2.6.1",
     "chalk": "^2.4.1",
