@@ -38,16 +38,16 @@ function help() {
 // 从cmd里，取到用户输入的第一个参数
 // 用户想要安装的模板名
 let template = program.args[0];
-// console.log('template 00:', template);
+console.log('template 00:', template);
 if(!template ) {
     // console.log('template 11:', template);
     help();
     // console.log('template 33:', template);
-} else if ((template.toString() !== 'cx-template')) {
-    // console.log('template 44:', template);
+} else if ((template.toString() !== 'cx-template' ) && (template.toString() !== 'cx-gulp')) {
     help();
+    // console.log('template 44:', template);
     // console.log('template 55:', template);
-}/* else if ((template.toString() !== 'vue-template')) {
+} /* else if ((template.toString() !== 'vue-template')) {
     console.log('template 66:', template);
     help();
     console.log('template 77:', template);

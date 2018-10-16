@@ -1,6 +1,6 @@
 {
   "name": "cx-init",
-  "version": "1.1.28",
+  "version": "1.1.30",
   "description": "my cx cli",
   "preferGlobal": true,
   "bin": {
@@ -22,8 +22,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
-      "registry": "http://nexus.chexiang.com/repository/npm-chexiang/"
-    },
+    "registry": "http://nexus.chexiang.com/repository/npm-chexiang/"
+  },
   "dependencies": {
     "async": "^2.6.1",
     "chalk": "^2.4.1",
@@ -37,7 +37,7 @@
     "ora": "^2.1.0",
     "rimraf": "^2.6.2",
     "user-home": "^2.0.0",
-    "download-git-repo":""
+    "download-git-repo": ""
   },
   "engines": {
     "node": ">=6.0.0"
