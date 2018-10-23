@@ -43,7 +43,6 @@ function help() {
 // 从cmd里，取到用户输入的第一个参数
 // 用户想要安装的模板名
 let template = program.args[0];
-template = template.toString().replace('-', '');
 // console.log('template 00:', template);
 if(!template ) {
     // console.log('template 11:', template);
