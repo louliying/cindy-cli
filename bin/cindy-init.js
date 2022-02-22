@@ -25,11 +25,11 @@ program
 
 program.on("--help", () => {
     console.log(chalk.green('----------------------------------------------------------'));
-    console.log(chalk.green('-         目前只支持: cx-template 和 cx-gulp             -'));
+    console.log(chalk.green('-         目前只支持: cindy-template 和 cindy-gulp             -'));
     console.log(chalk.green('-                                                        -'));
-    console.log(chalk.green("-         $ cx-init cx-template myProjectName            -"));
+    console.log(chalk.green("-         $ cindy-init cindy-template myProjectName            -"));
     console.log(chalk.green('-                                                        -'));
-    console.log(chalk.green("-         $ cx-init cx-gulp myProjectName                -"));
+    console.log(chalk.green("-         $ cindy-init cindy-gulp myProjectName                -"));
     console.log(chalk.green('----------------------------------------------------------'));
 });
 
@@ -50,10 +50,10 @@ if(!template ) {
     // console.log('template 33:', template);
 } else if (template.toString() === 'v') {
     console.log();
-    console.log(chalk.green('cx-init的版本为：', Package.version));
+    console.log(chalk.green('cindy-init的版本为：', Package.version));
     console.log();
     return;
-} else if ((template.toString() !== 'cx-template' ) && (template.toString() !== 'cx-gulp')) {
+} else if ((template.toString() !== 'cindy-template' ) && (template.toString() !== 'cindy-gulp')) {
     help();
     // console.log('template 44:', template);
     // console.log('template 55:', template);
@@ -72,11 +72,11 @@ const inPlace  = !rawName || rawName === '.';
 // 不是当前目录， name为用户输入的项目名
 const name = inPlace ? path.relative('../', process.cwd()) : rawName
 // 要创建的项目的绝对路径
-// 如果没有rawName , 下面这句是 to = path.resolve('.')  得到提，当前文件夹的根目录 ， 即"C:\websites\cx-cli\cx-build-cli2"
+// 如果没有rawName , 下面这句是 to = path.resolve('.')  得到提，当前文件夹的根目录 ， 即"C:\websites\cindy-cli\cindy-build-cli2"
 const to = path.resolve(rawName || '.');
 
 // 本地模板的路径  从git上拉下的模板，要缓存到本地的
-const tempUrl = path.join(home, '.cx-templates', template.replace(/[\/:]/g, '-'));
+const tempUrl = path.join(home, '.cindy-templates', template.replace(/[\/:]/g, '-'));
 
 // 在当前目录   或  已经存在此目录 了
 if (inPlace || exists(to)) {
