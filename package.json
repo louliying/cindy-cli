@@ -1,10 +1,10 @@
 {
-  "name": "cx-init",
+  "name": "cindy-init",
   "version": "1.1.31",
-  "description": "my cx cli",
+  "description": "my cindy cli",
   "preferGlobal": true,
   "bin": {
-    "cx-init": "./bin/cx-init.js"
+    "cx-init": "./bin/cindy-init.js"
   },
   "keywords": [
     "cli"
@@ -22,7 +22,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
-    "registry": "http://nexus.chexiang.com/repository/npm-chexiang/"
+    "registry": ""
   },
   "dependencies": {
     "async": "^2.6.1",
